@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var func = new Function("x", "y", "return x*y;");
+            function seconfunc(){
+                var result;
+                result= func(10, 20);
+                document.write(result);
+            }
+        </script>
+        <title></title>
+    </head>
+    <body>
+        <form action="">
+            <input type="button" value="Button" onclick="seconfunc();">
+        </form>
+    </body>
+</html>

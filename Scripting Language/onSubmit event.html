@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <script type="text/javascript">
+            function validation(){
+                if(document.myForm.Name.value==""){
+                    alert("Please provide the name");
+                    document.myForm.Name.focus();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm" onsubmit ="validation();">
+        Enter your name: <input type="text" name="Name"><br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+    </body>
+</html>

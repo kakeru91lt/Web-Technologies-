@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function setMessage(){
+                message=setTimeout("alert('This is a msg')", 3000)
+            }
+            function clearMessage(){
+                clearTimeout(message);
+                alert("This is use of clearTimeout Function");
+            }
+        </script>
+        <title></title>
+    </head>
+    <body>
+        <form action="">
+            <input type="button", value="Start" onclick="setMessage();">
+            <input type="button", value="Stop" onclick="clearMessage();">
+        </form>
+    </body>
+</html>
